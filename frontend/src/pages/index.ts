@@ -1,0 +1,11 @@
+export { default as RegisterPage } from "./auth/RegisterPage.tsx";
+export { default as LoginPage } from "./auth/LoginPage.tsx";
+export { default as ResetPassPage } from "./auth/ResetPassPage.tsx";
+export { default as ResetConfirmPage } from "./auth/ResetConfirmPage.tsx";
+export { default as HomePage } from "./main/HomePage.tsx";
+export { default as ProfilePage } from "./main/ProfilePage.tsx";
+export { default as EditProfilePage } from "./main/EditProfilePage.tsx";
+export { default as ExplorePage } from "./main/ExplorePage.tsx";
+export { default as PostPage } from "./main/PostPage.tsx";
+export { default as MessagesPage } from "./main/MessagesPage.tsx";
+export { default as NotFoundPage } from "./NotFoundPage.tsx";

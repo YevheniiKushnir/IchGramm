@@ -1,0 +1,12 @@
+export { default as create } from "./create/create.svg";
+export { default as createFill } from "./create/create_fill.svg";
+export { default as explore } from "./explore/explore.svg";
+export { default as exploreFill } from "./explore/explore_fill.svg";
+export { default as home } from "./home/home.svg";
+export { default as homeFill } from "./home/home_fill.svg";
+export { default as messages } from "./messages/messages.svg";
+export { default as messagesFill } from "./messages/messages_fill.svg";
+export { default as notifications } from "./notifications/notifications.svg";
+export { default as notificationsFill } from "./notifications/notifications_fill.png";
+export { default as search } from "./search/search.svg";
+export { default as searchFill } from "./search/search_fill.svg";

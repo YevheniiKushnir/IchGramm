@@ -1,0 +1,36 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ichgramm-backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.env  # Подключаем .env файл бэкенда
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - app-network
+    command: npm run dev
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ichgramm-frontend
+    ports:
+      - "5173:5173"
+    env_file:
+      - ./frontend/.env  # Подключаем .env файл фронтенда
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - app-network
+    command: npm run dev
+
+networks:
+  app-network:
+    driver: bridge
